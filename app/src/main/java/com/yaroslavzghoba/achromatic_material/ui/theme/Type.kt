@@ -1,5 +1,5 @@
 package com.yaroslavzghoba.achromatic_material.ui.theme
 
-import com.yaroslavzghoba.achromatic_material.styles.typography.Typography
+import androidx.compose.material3.Typography
 
 val Typography = Typography()

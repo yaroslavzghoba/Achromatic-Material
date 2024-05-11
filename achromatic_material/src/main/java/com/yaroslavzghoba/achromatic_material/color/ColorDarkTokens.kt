@@ -11,7 +11,19 @@ internal object ColorDarkTokens {
     val OnError: Color = PaletteTokens.Error20
     val ErrorContainer: Color = PaletteTokens.Error30
     val OnErrorContainer: Color = PaletteTokens.Error90
-    val Background: Color = PaletteTokens.White
-    val OnBackground: Color = PaletteTokens.Black
-    val Scrim: Color = PaletteTokens.Black
+    val Background: Color = PaletteTokens.Achromatic6
+    val OnBackground: Color = PaletteTokens.Achromatic90
+    val Surface: Color = PaletteTokens.Achromatic6
+    val SurfaceBright: Color = PaletteTokens.Achromatic24
+    val SurfaceDim: Color = PaletteTokens.Achromatic6
+    val SurfaceContainerLowest: Color = PaletteTokens.Achromatic4
+    val SurfaceContainerLow: Color = PaletteTokens.Achromatic10
+    val SurfaceContainer: Color = PaletteTokens.Achromatic12
+    val SurfaceContainerHigh: Color = PaletteTokens.Achromatic17
+    val SurfaceContainerHighest: Color = PaletteTokens.Achromatic22
+    val OnSurface: Color = PaletteTokens.Achromatic90
+    val OnSurfaceVariant: Color = PaletteTokens.Achromatic80
+    val Outline: Color = PaletteTokens.Achromatic60
+    val OutlineVariant: Color = PaletteTokens.Achromatic30
+    val Scrim: Color = PaletteTokens.Achromatic0
 }

@@ -1,8 +1,13 @@
-package com.yaroslavzghoba.achromatic_material.color
+package com.yaroslavzghoba.achromatic.color
 
 import androidx.compose.runtime.Immutable
+import androidx.compose.runtime.Stable
 import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.compositeOver
+import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.dp
+import kotlin.math.ln
 
 @Immutable
 data class ColorScheme(
@@ -25,7 +30,11 @@ data class ColorScheme(
     val surfaceContainerHigh: Color,
     val surfaceContainerHighest: Color,
     val onSurface: Color,
+    val surfaceVariant: Color,
     val onSurfaceVariant: Color,
+    val surfaceTint: Color,
+    val inverseSurface: Color,
+    val inverseOnSurface: Color,
     val outline: Color,
     val outlineVariant: Color,
     val scrim: Color,
@@ -51,7 +60,11 @@ fun lightColorScheme(
     surfaceContainerHigh: Color = ColorLightTokens.SurfaceContainerHigh,
     surfaceContainerHighest: Color = ColorLightTokens.SurfaceContainerHighest,
     onSurface: Color = ColorLightTokens.OnSurface,
+    surfaceVariant: Color = ColorLightTokens.SurfaceVariant,
     onSurfaceVariant: Color = ColorLightTokens.OnSurfaceVariant,
+    surfaceTint: Color = ColorLightTokens.SurfaceTint,
+    inverseSurface: Color = ColorLightTokens.InverseSurface,
+    inverseOnSurface: Color = ColorLightTokens.InverseOnSurface,
     outline: Color = ColorLightTokens.Outline,
     outlineVariant: Color = ColorLightTokens.OutlineVariant,
     scrim: Color = ColorLightTokens.Scrim,
@@ -75,7 +88,11 @@ fun lightColorScheme(
     surfaceContainerHigh = surfaceContainerHigh,
     surfaceContainerHighest = surfaceContainerHighest,
     onSurface = onSurface,
+    surfaceVariant = surfaceVariant,
     onSurfaceVariant = onSurfaceVariant,
+    surfaceTint = surfaceTint,
+    inverseSurface = inverseSurface,
+    inverseOnSurface = inverseOnSurface,
     outline = outline,
     outlineVariant = outlineVariant,
     scrim = scrim,
@@ -101,7 +118,11 @@ fun darkColorScheme(
     surfaceContainerHigh: Color = ColorDarkTokens.SurfaceContainerHigh,
     surfaceContainerHighest: Color = ColorDarkTokens.SurfaceContainerHighest,
     onSurface: Color = ColorDarkTokens.OnSurface,
+    surfaceVariant: Color = ColorDarkTokens.SurfaceVariant,
     onSurfaceVariant: Color = ColorDarkTokens.OnSurfaceVariant,
+    surfaceTint: Color = ColorDarkTokens.SurfaceTint,
+    inverseSurface: Color = ColorDarkTokens.InverseSurface,
+    inverseOnSurface: Color = ColorDarkTokens.InverseOnSurface,
     outline: Color = ColorDarkTokens.Outline,
     outlineVariant: Color = ColorDarkTokens.OutlineVariant,
     scrim: Color = ColorDarkTokens.Scrim,
@@ -125,10 +146,31 @@ fun darkColorScheme(
     surfaceContainerHigh = surfaceContainerHigh,
     surfaceContainerHighest = surfaceContainerHighest,
     onSurface = onSurface,
+    surfaceVariant = surfaceVariant,
     onSurfaceVariant = onSurfaceVariant,
+    surfaceTint = surfaceTint,
+    inverseSurface = inverseSurface,
+    inverseOnSurface = inverseOnSurface,
     outline = outline,
     outlineVariant = outlineVariant,
     scrim = scrim,
 )
+
+/**
+ * Computes the surface tonal color at different elevation levels e.g. surface1 through surface5.
+ *
+ * @param elevation Elevation value used to compute alpha of the color overlay layer.
+ *
+ * @return the [ColorScheme.surface] color with an alpha of the [ColorScheme.surfaceTint] color
+ * overlaid on top of it.
+ */
+@Stable
+fun ColorScheme.surfaceColorAtElevation(
+    elevation: Dp,
+): Color {
+    if (elevation == 0.dp) return surface
+    val alpha = ((4.5f * ln(elevation.value + 1)) + 2f) / 100f
+    return surfaceTint.copy(alpha = alpha).compositeOver(surface)
+}
 
 internal val LocalColorScheme = staticCompositionLocalOf { lightColorScheme() }

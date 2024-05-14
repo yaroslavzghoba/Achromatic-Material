@@ -16,9 +16,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { setUrl("https://jitpack.io") }  // Add jitpack
     }
 }
 
 rootProject.name = "Achromatic Material"
 include(":app")
-include(":achromatic_material")
+include(":achromatic")

@@ -1,4 +1,4 @@
-package com.yaroslavzghoba.achromatic_material.color
+package com.yaroslavzghoba.achromatic.color
 
 import androidx.compose.ui.graphics.Color
 
@@ -21,8 +21,12 @@ internal object ColorLightTokens {
     val SurfaceContainer: Color = PaletteTokens.Achromatic94
     val SurfaceContainerHigh: Color = PaletteTokens.Achromatic92
     val SurfaceContainerHighest: Color = PaletteTokens.Achromatic90
+    val SurfaceVariant: Color = PaletteTokens.Achromatic90
     val OnSurface: Color = PaletteTokens.Achromatic10
     val OnSurfaceVariant: Color = PaletteTokens.Achromatic30
+    val SurfaceTint: Color = Achromatic
+    val InverseSurface: Color = PaletteTokens.Achromatic20
+    val InverseOnSurface: Color = PaletteTokens.Achromatic95
     val Outline: Color = PaletteTokens.Achromatic50
     val OutlineVariant: Color = PaletteTokens.Achromatic80
     val Scrim: Color = PaletteTokens.Achromatic0

@@ -9,7 +9,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/achromatic_material" />
+            <option value="$PROJECT_DIR$/achromatic" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>

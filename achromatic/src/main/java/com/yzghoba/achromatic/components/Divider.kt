@@ -1,4 +1,4 @@
-package com.yaroslavzghoba.achromatic.components
+package com.yzghoba.achromatic.components
 
 import androidx.compose.material3.DividerDefaults
 import androidx.compose.material3.HorizontalDivider
@@ -7,7 +7,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.Dp
-import com.yaroslavzghoba.achromatic.AchromaticTheme
+import com.yzghoba.achromatic.AchromaticTheme
 
 /**Achromatic Material divider*/
 @Composable

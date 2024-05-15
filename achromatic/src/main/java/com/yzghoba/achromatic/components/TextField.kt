@@ -1,4 +1,4 @@
-package com.yaroslavzghoba.achromatic.components
+package com.yzghoba.achromatic.components
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.interaction.MutableInteractionSource
@@ -20,7 +20,7 @@ import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.text.input.VisualTransformation
-import com.yaroslavzghoba.achromatic.AchromaticTheme
+import com.yzghoba.achromatic.AchromaticTheme
 
 /**Achromatic Material filled text field*/
 @Composable
@@ -133,7 +133,7 @@ fun AchromaticTextField(
 
 /**
  * Creates a [TextFieldColors] that represents the default input text, container, and content
- * colors (including label, placeholder, icons, etc.) used in a [TextField].
+ * colors (including label, placeholder, icons, etc.) used in a [AchromaticTextField].
  *
  * @param focusedTextColor the color used for the input text of this text field when focused
  * @param unfocusedTextColor the color used for the input text of this text field when not focused

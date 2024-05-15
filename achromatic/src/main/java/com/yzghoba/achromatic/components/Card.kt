@@ -1,4 +1,4 @@
-package com.yaroslavzghoba.achromatic.components
+package com.yzghoba.achromatic.components
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.interaction.MutableInteractionSource
@@ -16,8 +16,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.graphics.compositeOver
 import androidx.compose.ui.unit.dp
-import com.yaroslavzghoba.achromatic.AchromaticTheme
-import com.yaroslavzghoba.achromatic.color.surfaceColorAtElevation
+import com.yzghoba.achromatic.AchromaticTheme
+import com.yzghoba.achromatic.color.surfaceColorAtElevation
 
 /**Achromatic Material outlined card*/
 @Composable

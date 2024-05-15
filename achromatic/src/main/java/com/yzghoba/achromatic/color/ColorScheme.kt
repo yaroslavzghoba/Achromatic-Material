@@ -1,4 +1,4 @@
-package com.yaroslavzghoba.achromatic.color
+package com.yzghoba.achromatic.color
 
 import androidx.compose.runtime.Immutable
 import androidx.compose.runtime.Stable

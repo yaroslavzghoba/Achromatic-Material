@@ -1,4 +1,4 @@
-package com.yaroslavzghoba.achromatic.components
+package com.yzghoba.achromatic.components
 
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.AlertDialogDefaults
@@ -8,7 +8,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.window.DialogProperties
-import com.yaroslavzghoba.achromatic.AchromaticTheme
+import com.yzghoba.achromatic.AchromaticTheme
 
 /**Achromatic Material alert dialog*/
 @Composable

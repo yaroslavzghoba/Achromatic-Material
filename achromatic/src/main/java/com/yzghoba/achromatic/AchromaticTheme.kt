@@ -1,12 +1,12 @@
-package com.yaroslavzghoba.achromatic
+package com.yzghoba.achromatic
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Shapes
 import androidx.compose.material3.Typography
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
-import com.yaroslavzghoba.achromatic.color.ColorScheme
-import com.yaroslavzghoba.achromatic.color.LocalColorScheme
+import com.yzghoba.achromatic.color.ColorScheme
+import com.yzghoba.achromatic.color.LocalColorScheme
 
 @Composable
 fun AchromaticTheme(

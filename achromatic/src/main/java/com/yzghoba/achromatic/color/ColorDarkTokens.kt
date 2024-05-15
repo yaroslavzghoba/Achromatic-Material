@@ -1,4 +1,4 @@
-package com.yaroslavzghoba.achromatic.color
+package com.yzghoba.achromatic.color
 
 import androidx.compose.ui.graphics.Color
 

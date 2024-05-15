@@ -1,4 +1,4 @@
-package com.yaroslavzghoba.achromatic.components
+package com.yzghoba.achromatic.components
 
 import androidx.compose.foundation.layout.RowScope
 import androidx.compose.foundation.layout.WindowInsets
@@ -13,7 +13,7 @@ import androidx.compose.material3.TopAppBarScrollBehavior
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import com.yaroslavzghoba.achromatic.AchromaticTheme
+import com.yzghoba.achromatic.AchromaticTheme
 
 /**Achromatic Material center aligned top app bar*/
 @ExperimentalMaterial3Api

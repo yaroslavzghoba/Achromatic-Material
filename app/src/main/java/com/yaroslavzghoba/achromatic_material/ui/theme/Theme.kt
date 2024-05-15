@@ -2,9 +2,9 @@ package com.yaroslavzghoba.achromatic_material.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.runtime.Composable
-import com.yaroslavzghoba.achromatic.AchromaticTheme
-import com.yaroslavzghoba.achromatic.color.darkColorScheme
-import com.yaroslavzghoba.achromatic.color.lightColorScheme
+import com.yzghoba.achromatic.AchromaticTheme
+import com.yzghoba.achromatic.color.darkColorScheme
+import com.yzghoba.achromatic.color.lightColorScheme
 
 @Composable
 fun AchromaticMaterialTheme(

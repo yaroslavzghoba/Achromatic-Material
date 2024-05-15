@@ -40,7 +40,7 @@ data class ColorScheme(
     val scrim: Color,
 )
 
-fun lightColorScheme(
+fun lightAchromaticColorScheme(
     achromatic: Color = ColorLightTokens.Achromatic,
     onAchromatic: Color = ColorLightTokens.OnAchromatic,
     achromaticContainer: Color = ColorLightTokens.AchromaticContainer,
@@ -98,7 +98,7 @@ fun lightColorScheme(
     scrim = scrim,
 )
 
-fun darkColorScheme(
+fun darkAchromaticColorScheme(
     achromatic: Color = ColorDarkTokens.Achromatic,
     onAchromatic: Color = ColorDarkTokens.OnAchromatic,
     achromaticContainer: Color = ColorDarkTokens.AchromaticContainer,
@@ -173,4 +173,4 @@ fun ColorScheme.surfaceColorAtElevation(
     return surfaceTint.copy(alpha = alpha).compositeOver(surface)
 }
 
-internal val LocalColorScheme = staticCompositionLocalOf { lightColorScheme() }
+internal val LocalColorScheme = staticCompositionLocalOf { lightAchromaticColorScheme() }

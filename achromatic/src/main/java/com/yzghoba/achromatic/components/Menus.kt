@@ -11,7 +11,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import com.yzghoba.achromatic.AchromaticTheme
 
-/**Achromatic Material list item*/
+/**Achromatic Material dropdown menu item*/
 @Composable
 fun AchromaticDropdownMenuItem(
     text: @Composable () -> Unit,

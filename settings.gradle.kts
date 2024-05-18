@@ -21,5 +21,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Achromatic Material"
-include(":app")
 include(":achromatic")

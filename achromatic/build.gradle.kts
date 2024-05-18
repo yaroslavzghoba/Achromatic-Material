@@ -1,10 +1,11 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id("maven-publish")
 }
 
 android {
-    namespace = "com.yaroslavzghoba.achromatic_material"
+    namespace = "com.yzghoba.achromatic"
     compileSdk = 34
 
     defaultConfig {
@@ -39,7 +40,20 @@ android {
 }
 
 dependencies {
-    implementation(platform(libs.androidx.compose.bom))
-    implementation(libs.androidx.ui)
     implementation(libs.androidx.material3)
+}
+
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.github.yaroslavzghoba"
+            artifactId = "achromatic-material"
+            version = "1.0"
+
+
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
+    }
 }

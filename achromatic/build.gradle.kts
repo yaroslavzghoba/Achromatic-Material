@@ -49,7 +49,7 @@ afterEvaluate {
             create<MavenPublication>("maven") {
                 from(components["release"])
                 groupId = "com.github.yaroslavzghoba"
-                artifactId = "achromatic-material"
+                artifactId = "AchromaticMaterial"
                 version = "1.0"
             }
         }

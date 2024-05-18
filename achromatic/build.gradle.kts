@@ -43,16 +43,14 @@ dependencies {
     implementation(libs.androidx.material3)
 }
 
-publishing {
-    publications {
-        register<MavenPublication>("release") {
-            groupId = "com.github.yaroslavzghoba"
-            artifactId = "achromatic-material"
-            version = "1.0"
-
-
-            afterEvaluate {
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("maven") {
                 from(components["release"])
+                groupId = "com.github.yaroslavzghoba"
+                artifactId = "achromatic-material"
+                version = "1.0"
             }
         }
     }

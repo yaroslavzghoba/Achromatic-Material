@@ -19,13 +19,13 @@ dependencyResolutionManagement {
 2. Add dependency to your module `build.gradle.kts` file:
 ```kotlin
 dependencies {
-    implementation("com.github.yaroslavzghoba:AchromaticMaterial:1.0")
+    implementation("com.github.yaroslavzghoba:AchromaticMaterial:1.0.0")
 }
 ```
 Or using version catalog add library to `libs.versions.toml` file:
 ```toml
 [versions]  
-achromatic = "1.0" 
+achromatic = "1.0.0" 
   
 [libraries]  
 achromatic-material = { group = "com.github.yaroslavzghoba", name = "AchromaticMaterial", version.ref = "achromatic" }

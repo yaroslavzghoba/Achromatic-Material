@@ -4,7 +4,7 @@
 Achromatic Material is an Android library that complements the Material Design 3 library for Jetpack Compose. Unlike the latter, Achromatic Material uses only shades of gray for design (the exception is red for errors). 
 <img src="documentation-resources/Color palettes.png" />
 This approach is easier to understand and allows you to create a user interface that does not conflict with content colors. The disadvantages are the lack of the ability to create a contrast in shade and the lack of support for dynamic themes.
-## Installation (Not released yet)
+## Installation
 1. Add support of JitPack repository in `settings.gradle.kts` file:
 ```kotlin
 dependencyResolutionManagement {  
@@ -19,16 +19,16 @@ dependencyResolutionManagement {
 2. Add dependency to your module `build.gradle.kts` file:
 ```kotlin
 dependencies {
-    implementation("GROUP:NAME:VERSION")
+    implementation("com.github.yaroslavzghoba:AchromaticMaterial:1.0")
 }
 ```
 Or using version catalog add library to `libs.versions.toml` file:
 ```toml
 [versions]  
-achromatic = "VERSION" 
+achromatic = "1.0" 
   
 [libraries]  
-achromatic-material = { group = "GROUP", name = "NAME", version.ref = "achromatic" }
+achromatic-material = { group = "com.github.yaroslavzghoba", name = "AchromaticMaterial", version.ref = "achromatic" }
 ```
 And implement it in module `build.gradle.kts` file:
 ```kotlin
@@ -96,7 +96,7 @@ Button(
     Text(text = "Submit")  
 }
 ```
-Achromatic Material provides achromatic alternatives for many [components](https://m3.material.io/components) from the Material Design 3 catalog. See achromatic components catalog below.
+Achromatic Material provides achromatic alternatives for many [components](https://m3.material.io/components) from the Material Design 3 catalog. See [achromatic components catalog](#components-catalog) below.
 ## Roadmap
 - [ ] Update API documentation
 - [ ] Add cover for README.md file

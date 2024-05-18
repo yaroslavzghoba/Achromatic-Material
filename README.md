@@ -196,7 +196,7 @@ Achromatic Material provides achromatic alternatives for many [components](https
     <tr>
         <td>Lists</td>
         <td>
-            <img alt="In process" src="https://img.shields.io/badge/In_process-FFE085">
+            <img alt="Available" src="https://img.shields.io/badge/Available-C5F185">
         </td>
     </tr>
     <tr>

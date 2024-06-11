@@ -10,7 +10,16 @@ import com.yzghoba.achromatic.color.LocalAchromaticColors
 import com.yzghoba.achromatic.util.LocalThemeConfig
 import com.yzghoba.achromatic.util.defaultThemeConfig
 
-// TODO: Write documentation
+/**
+ * Defines application theme
+ *
+ * @param useAchromaticColors specify should [MaterialTheme] use achromatic colors instead of
+ * standard. If it's true use [achromaticScheme] else [colorScheme]
+ * @param colorScheme original Material Design 3 colorful color scheme
+ * @param achromaticScheme achromatic color scheme
+ * @param shapes A set of corner shapes
+ * @param typography A set of text styles
+ */
 @Composable
 fun AchromaticTheme(
     useAchromaticColors: Boolean = defaultThemeConfig.useAchromaticColors,

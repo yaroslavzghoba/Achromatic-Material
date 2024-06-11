@@ -4,6 +4,7 @@ import androidx.compose.material3.ColorScheme
 import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.graphics.Color
 
+/**Creates light color scheme using achromatic colors*/
 fun lightAchromaticScheme(
     primary: Color = AchromaticLightTokens.Primary,
     onPrimary: Color = AchromaticLightTokens.OnPrimary,
@@ -80,6 +81,7 @@ fun lightAchromaticScheme(
     surfaceDim = surfaceDim,
 )
 
+/**Creates dark color scheme using achromatic colors*/
 fun darkAchromaticScheme(
     primary: Color = AchromaticDarkTokens.Primary,
     onPrimary: Color = AchromaticDarkTokens.OnPrimary,

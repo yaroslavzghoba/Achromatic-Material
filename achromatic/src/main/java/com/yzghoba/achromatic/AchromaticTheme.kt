@@ -1,37 +1,35 @@
 package com.yzghoba.achromatic
 
+import androidx.compose.material3.ColorScheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Shapes
 import androidx.compose.material3.Typography
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
-import com.yzghoba.achromatic.color.ColorScheme
-import com.yzghoba.achromatic.color.LocalColorScheme
+import com.yzghoba.achromatic.color.LocalAchromaticColors
+import com.yzghoba.achromatic.util.LocalThemeConfig
+import com.yzghoba.achromatic.util.defaultThemeConfig
 
 // TODO: Write documentation
 @Composable
 fun AchromaticTheme(
-    colorScheme: ColorScheme = AchromaticTheme.colorScheme,
-    colorfulColorScheme: androidx.compose.material3.ColorScheme = MaterialTheme.colorScheme,
+    useAchromaticColors: Boolean = defaultThemeConfig.useAchromaticColors,
+    colorScheme: ColorScheme = MaterialTheme.colorScheme,
+    achromaticScheme: ColorScheme = LocalAchromaticColors.current,
     shapes: Shapes = MaterialTheme.shapes,
     typography: Typography = MaterialTheme.typography,
     content: @Composable () -> Unit,
 ) {
     CompositionLocalProvider(
-        LocalColorScheme provides colorScheme,
+        LocalThemeConfig provides LocalThemeConfig.current.copy(
+            useAchromaticColors = useAchromaticColors,
+        )
     ) {
         MaterialTheme(
-            colorScheme = colorfulColorScheme,
+            colorScheme = if (useAchromaticColors) achromaticScheme else colorScheme,
             shapes = shapes,
             typography = typography,
-            content = content
+            content = content,
         )
     }
-}
-
-// TODO: Write documentation
-object AchromaticTheme {
-    val colorScheme: ColorScheme
-        @Composable
-        get() = LocalColorScheme.current
 }

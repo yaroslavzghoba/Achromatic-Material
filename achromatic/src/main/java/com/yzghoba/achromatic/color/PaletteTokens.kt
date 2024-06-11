@@ -2,7 +2,7 @@ package com.yzghoba.achromatic.color
 
 import androidx.compose.ui.graphics.Color
 
-object PaletteTokens {
+internal object PaletteTokens {
     private val Black = Color(0xFF000000)
     private val White = Color(0xFFFFFFFF)
 

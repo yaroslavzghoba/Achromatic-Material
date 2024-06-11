@@ -2,11 +2,20 @@ package com.yzghoba.achromatic.color
 
 import androidx.compose.ui.graphics.Color
 
-internal object ColorDarkTokens {
-    val Achromatic: Color = PaletteTokens.Achromatic100
-    val OnAchromatic: Color = PaletteTokens.Achromatic20
-    val AchromaticContainer: Color = PaletteTokens.Achromatic30
-    val OnAchromaticContainer: Color = PaletteTokens.Achromatic90
+internal object AchromaticDarkTokens {
+    val Primary: Color = PaletteTokens.Achromatic100
+    val OnPrimary: Color = PaletteTokens.Achromatic20
+    val PrimaryContainer: Color = PaletteTokens.Achromatic30
+    val OnPrimaryContainer: Color = PaletteTokens.Achromatic90
+    val InversePrimary: Color = PaletteTokens.Achromatic20
+    val Secondary: Color = Primary
+    val OnSecondary: Color = OnPrimary
+    val SecondaryContainer: Color = PrimaryContainer
+    val OnSecondaryContainer: Color = OnPrimaryContainer
+    val Tertiary: Color = Primary
+    val OnTertiary: Color = OnPrimary
+    val TertiaryContainer: Color = PrimaryContainer
+    val OnTertiaryContainer: Color = OnPrimaryContainer
     val Error: Color = PaletteTokens.Error80
     val OnError: Color = PaletteTokens.Error20
     val ErrorContainer: Color = PaletteTokens.Error30
@@ -24,7 +33,7 @@ internal object ColorDarkTokens {
     val OnSurface: Color = PaletteTokens.Achromatic90
     val SurfaceVariant: Color = PaletteTokens.Achromatic30
     val OnSurfaceVariant: Color = PaletteTokens.Achromatic80
-    val SurfaceTint: Color = Achromatic
+    val SurfaceTint: Color = Primary
     val InverseSurface: Color = PaletteTokens.Achromatic90
     val InverseOnSurface: Color = PaletteTokens.Achromatic20
     val Outline: Color = PaletteTokens.Achromatic60

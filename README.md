@@ -62,6 +62,7 @@ fun ApplicationTheme(
     content: @Composable () -> Unit,  
 ) {
     // Original Material Design 3 color scheme
+    // By default, it will be ignored. Pass false in the useAchromaticColors argument to switch to this color scheme  
     val colorScheme = when {
         dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
             val context = LocalContext.current

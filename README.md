@@ -127,6 +127,6 @@ To check is the theme using achromatic colors use `areUsingAchromaticColors` fun
 ApplicationTheme(
     useAchromaticColors = true,
 ) {
-    println(areUsingAchromaticColors)  // true 
+    println(areUsingAchromaticColors())  // true 
 }
 ```

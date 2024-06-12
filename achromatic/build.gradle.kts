@@ -50,7 +50,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.yaroslavzghoba"
                 artifactId = "AchromaticMaterial"
-                version = "1.0"
+                version = "2.0.0"
             }
         }
     }
